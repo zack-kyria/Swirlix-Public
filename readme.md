@@ -2,6 +2,10 @@
 
 Because I wanted ~~Psyduck~~ Swirlix!
 
+Swirlix uses Scrappey to pass the JS check. This has proven to be really reliable. 
+Alternatively, use [Xilriws](https://github.com/UnownHash/Xilriws-Public), which 
+passes the check itself.
+
 ## Requirements
 - API token from https://scrappey.com
   - It's 3rd party API, not associated with U#
