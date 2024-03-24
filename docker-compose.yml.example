@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  dragonite:
+  swirlix:
     image: ghcr.io/unownhash/swirlix-public:latest
     container_name: swirlix
     restart: unless-stopped
