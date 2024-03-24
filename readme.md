@@ -40,6 +40,6 @@ pm2 start ./swirlix-linux-amd64 --name swirlix
 
 ### Update
 
-- Execute `run.sh` to download the latest release (broken! download manually from Releases for now)
+- Execute `run.sh` to download the latest release
 - Check Changelog, check `config.toml.example` for new config values available
 - `pm2 restart swirlix`
