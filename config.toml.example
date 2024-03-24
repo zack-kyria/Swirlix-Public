@@ -1,0 +1,7 @@
+[general]
+host = "127.0.0.1"
+port = 7372
+
+[scrappey]
+api_key = ""
+# pre_fetch = 20
