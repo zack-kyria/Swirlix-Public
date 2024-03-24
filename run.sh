@@ -101,7 +101,7 @@ download_latest_release() {
   fi
 
   # Extract the download URL for the specific file in the latest release
-  local download_url=$(echo "$releases_info" | jq -r ".assets[] | select(.name == \"$FILE_NAME\").browser_download_url")
+  local download_url=$(echo "$releases_info" | jq -r ".assets[] | select(.name == \"$FILE_NAME\").url")
 
   # Define the download file name based on the selected file
   local download_filename="$FILE_NAME"
