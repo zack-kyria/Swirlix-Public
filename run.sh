@@ -108,23 +108,23 @@ download_latest_release() {
 
   # Download the specific release file
   echo "Downloading $download_filename $latest_tag_var ... waiting ..."
-  curl -sL -H "Accept: application/octet-stream" -o "$application/${download_filename}_new" "$download_url"
+  curl -sL -H "Accept: application/octet-stream" -o "${download_filename}_new" "$download_url"
 
   # Check if the download was successful
   if [ $? -ne 0 ]; then
     echo "Failed to download the release file"
     exit 1
   fi
-  if [ -f "$application/$download_filename" ]; then
+  if [ -f "$download_filename" ]; then
     # Delete the old download
-    rm -f "$application/${download_filename}"
+    rm -f "${download_filename}"
   fi
 
   # Rename the new file without "_new" suffix
-  mv "$application/${download_filename}_new" "$application/$download_filename"
+  mv "${download_filename}_new" "$download_filename"
 
   echo "Downloaded $download_filename $latest_tag_var"
-  chmod +x "$application/$download_filename"
+  chmod +x "$download_filename"
 }
 
 if [[ $SHOW_TAGS == "swirlix-"* ]] || [ -z $SHOW_TAGS ] ; then
