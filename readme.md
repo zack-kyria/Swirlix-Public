@@ -12,7 +12,7 @@ passes the check itself.
   - You can get a free day of Swirlix use for email activation
   - Whole month should be under 4€
   - No accounts details are sent to external API
-- Dragonite testing with `remote_auth_url` config
+- Dragonite v.1.7.0 with `remote_auth_url` config
 - Dragonite configuration
 ```toml
 [general]
