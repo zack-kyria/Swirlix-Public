@@ -4,6 +4,7 @@ Because I wanted ~~Psyduck~~ Swirlix!
 
 ## Requirements
 - API token from https://scrappey.com
+  - It's 3rd party API, not associated with U#
   - You can get a free day of Swirlix use for email activation
   - Whole month should be under 4€
   - No accounts details are sent to external API
@@ -35,13 +36,6 @@ pm2 start ./swirlix-linux-amd64 --name swirlix
 
 ### Update
 
-- Execute run.sh to download the latest release
-- Check Changelog, check config.toml for new config values available
-- pm2 restart swirlix
-
-### Testing
-
-To download a testing binary execute
-```sh
-./run.sh -t
-```
+- Execute `run.sh` to download the latest release (broken! download manually from Releases for now)
+- Check Changelog, check `config.toml.example` for new config values available
+- `pm2 restart swirlix`
