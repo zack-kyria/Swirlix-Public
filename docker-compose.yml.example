@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  dragonite:
+    image: ghcr.io/unownhash/swirlix-public:latest
+    container_name: swirlix
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: ./config.toml
+        target: /swirlix/config.toml
+    ports:
+      - "7372:7372"
